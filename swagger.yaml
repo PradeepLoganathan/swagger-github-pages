@@ -29,6 +29,13 @@ paths:
           description: Loan application created successfully
           schema:
             $ref: "#/definitions/LoanApplication"
+          examples:
+            application/json:
+              loanId: "12345"
+              applicantName: John Doe
+              loanAmount: 50000
+              duration: 24
+              interestRate: 6.5
         400:
           description: Invalid request
         500:
@@ -51,6 +58,13 @@ paths:
           description: Loan application details retrieved successfully
           schema:
             $ref: "#/definitions/LoanApplication"
+          examples:
+            application/json:
+              loanId: "12345"
+              applicantName: John Doe
+              loanAmount: 50000
+              duration: 24
+              interestRate: 6.5
         404:
           description: Loan application not found
         500:
